@@ -1,0 +1,125 @@
+body{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+
+.button-top {
+    background: rgb(82, 82, 82);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    border-radius: 50%;
+    margin: 4px 2px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    width: 2em;
+}
+.button-top:hover{
+    background: rgb(173, 173, 173);
+}
+.button-top:active{
+    background: rgb(82, 82, 82);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.button-rest {
+    background: rgb(53, 53, 53);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    border-radius: 50%;
+    margin: 4px 2px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    width: 2em;
+}
+
+.button-rest:hover{
+    background: rgb(82, 82, 82);
+
+}
+.button-rest:active {
+    background: rgb(53, 53, 53);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.symbols{
+    background: orange;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    border-radius: 50%;
+    margin: 4px 2px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    width: 2em;
+}
+.symbols:hover{
+    background: #ecb040
+}
+.symbols:active{
+    background: #ecc782;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.top-row{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+.second-row{
+    position: absolute;
+    top: 52%;
+    left: 25%;
+}
+.third-row{
+    position: absolute;
+    top: 64%;
+    left: 25%;
+}
+.fourth-row{
+    position: absolute;
+    top: 76%;
+    left: 25%;
+}
+.last-row{
+    position: absolute;
+    top: 88%;
+    left: 25%;
+}
+.button-back {
+    background: #191A1A;
+    border: none;
+    color: #CBC69D;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position:absolute; 
+    top:0; 
+    right:0;
+    font-size: 30px;
+    display: inline-block; 
+}
+input{
+    position: absolute;
+    top: 28%;
+    right: 25%;
+    left: 25%;
+   background-color: #191A1A;
+   font-size: 60px;
+   width: 9.5em;
+   color: white;
+   
+}
+
+

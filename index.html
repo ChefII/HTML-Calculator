@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style= "background-color: white">
+    <input type="text" id="result" class= "position" disabled/>
+    <div class= "top-row">
+        <button class= "button-top" onclick="clearInput()">AC</button>
+        <button class= "button-top" onclick="plusMinus()">+/-</button>
+        <button class= "button-top" onclick="percentage()">%</button>
+        <button class= "symbols" onclick="currentValue('/')">÷</button>
+    </div>
+    <div class= "second-row">
+        <button class= "button-rest" onclick="currentValue('7')">7</button>
+        <button class= "button-rest" onclick="currentValue('8')">8</button>
+        <button class= "button-rest" onclick="currentValue('9')">9</button>
+        <button class= "symbols" onclick="currentValue('*')">×</button>
+    </div>
+    <div class= "third-row">
+        <button class= "button-rest" onclick="currentValue('4')">4</button>
+        <button class= "button-rest" onclick="currentValue('5')">5</button>
+        <button class= "button-rest" onclick="currentValue('6')">6</button>
+        <button class= "symbols" onclick="currentValue('-')">-</button>
+    </div>
+    <div class= "fourth-row">
+        <button class= "button-rest"onclick="currentValue('1')">1</button>
+        <button class= "button-rest" onclick="currentValue('2')">2</button>
+        <button class= "button-rest" onclick="currentValue('3')">3</button>
+        <button class= "symbols" onclick="currentValue('+')">+</button>
+    </div>
+    <div class= "last-row">
+        <button class= "button-rest" onclick="currentValue('0')">0</button>
+        <button class= "button-rest"  onclick="currentValue('.')">.</button>
+        <button class= "button-rest" onclick= "deleteLast()">←</button>
+        <button class= "symbols"  onclick="solve()">=</button>
+    </div>
+</body>
+<script> 
+    function currentValue(number) { 
+        var string = (document.getElementById("result").value).concat(number)
+        document.getElementById("result").value = string;
+    }
+    function deleteLast(){
+        var str = document.getElementById("result").value;
+        str = str.slice(0, -1); 
+        document.getElementById("result").value = str;
+    } 
+    function solve(){ 
+        var result = eval(document.getElementById("result").value)
+        document.getElementById("result").value = result
+    } 
+    function clearInput(){ 
+        var string = "0"
+        document.getElementById("result").value = string
+    }
+    function plusMinus(){
+        var result = eval(document.getElementById("result").value)
+        result *= -1
+        document.getElementById("result").value = result
+    }
+    function percentage(){
+        document.getElementById("result").value =  document.getElementById("result").value /100
+    }
+    
+ </script> 
